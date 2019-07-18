@@ -1,0 +1,9 @@
+import Sequelize, { Models } from 'sequelize';
+
+class User extends Models {
+  static init(sequelize) {
+    super.init({ id: Sequelize.INTEGER },{sequelize});
+  }
+}
+
+export default User;
