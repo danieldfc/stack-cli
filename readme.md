@@ -1,13 +1,15 @@
 # Stack CLI
-
+<br>
 <h3 align="center">
 Pacote para automatização de projetos usando Node.Js, ReactJs e React Native! 🚀
 </h3>
-<div>
+<div><br />
 
 [![npm](https://img.shields.io/badge/npm-v6.9.0-brightgreen.svg)](https://www.npmjs.com/package/stack-nr)
 <p>Versão Atual: v0.0.1</p>
 </div>
+
+<hr />
 
 ## Visão global
 
@@ -15,6 +17,8 @@ Pacote para automatização de projetos usando Node.Js, ReactJs e React Native! 
 Mas antes de contribuir, tenho que te falar sobre este pacote, como pode ser instalado, que ferramentas foram usadas, enfim, tudo que você tem o direito de saber.</p>
 
 [Stack - npm](https://www.npmjs.com/package/stack-nr)
+
+<hr />
 
 ## Tabela de conteúdo
 
@@ -26,41 +30,44 @@ Mas antes de contribuir, tenho que te falar sobre este pacote, como pode ser ins
 - [Contato](#contato)
 - [Licença](#licença)
 
+<hr />
+
 ## Ferramentas
 
   - [Gluegun](https://www.npmjs.com/package/gluegun) - [Github](https://github.com/infinitered/gluegun/tree/master/docs)
 
+<hr />
+
 ## Comandos
 
 Estes comandos serão aprimorados com o tempo e é preciso que você nos dê a sua sugestão. ッ
-Aqui é onde a mágica acontece 😍
 
-## Node
+**Aqui é onde a mágica acontece 😍**
 
-Para começar com o node, é preciso você saber a estrutura de pastas criadas:
+Antes de criar o projeto e sair codando, é preciso instalar essa ferramenta em sua máquina, execute:
 
+- NPM
+````shell
+$ npm install -g stack-nr
 ````
-stack 
-┃ ┗ src
-┃     ┣ app
-┃     ┃   ┣ controllers
-┃     ┃   ┃ ┗ UserController.js
-┃     ┃   ┣ middlewares
-┃     ┃   ┃ ┗ auth.js
-┃     ┃   ┗ models
-┃     ┃      ┗ User.js
-┃     ┣ config
-┃     ┃   ┣ auth.js
-┃     ┃   ┗ database.js
-┃     ┣ database
-┃     ┃   ┗ index.js
 
+- YARN
+````shell
+$ yarn global add stack-nr
 ````
+
+Espera-se terminar a execução e a partir de agora você está pronto para prosseguir com os próximos passos.
+
+### **Node**
 
 Para executar a lib, foi disponibilizado alguns comandos:
 
 ````shell
-$  stack node --db=sequelize --dialect=postgres
+$  stack-nr node --db=sequelize --dialect=postgres
+````
+
+````shell
+$  stack-nr node --db=sequelize --dialect=postgres
 ````
 Para a flag **--db**, você poderá usar o banco de dados, dentre eles estão:
 
@@ -74,11 +81,36 @@ Já para o **--dialect** pode ser usado o tipo de dialeto, dentre eles estão:
 - sqlite
 - mssql
 
-### React
+Depois que executar, é preciso você saber a estrutura de pastas criadas:
 
 ````
-Ainda em produção.
+src
+┣ app
+┃   ┣ controllers
+┃   ┃ ┗ UserController.js
+┃   ┣ middlewares
+┃   ┃ ┗ auth.js
+┃   ┗ models
+┃     ┗ User.js
+┣ config
+┃   ┣ auth.js
+┃   ┗ database.js
+┗ database
+     ┗ index.js
 ````
+
+Aqui você precisará entender como funciona o fluxo, porque este é o seu ponto de partida para começar a programar em Nodejs.
+
+<hr />
+
+
+### **React**
+
+````
+Ainda em desenvolvimento.
+````
+
+<hr />
 
 ## Contribuição
 
