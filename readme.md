@@ -14,6 +14,8 @@ Pacote para automatização de projetos usando Node.Js, ReactJs e React Native! 
 <p>Este é um pacote para melhor produtividade em node.js, react e react-native, infelizmente só foi criado a arquitetura para nodejs usando o sequelize, você poderá contribuir conosco como quiser, além do mais, quem ai num gosta de uma ferramenta para automatização??
 Mas antes de contribuir, tenho que te falar sobre este pacote, como pode ser instalado, que ferramentas foram usadas, enfim, tudo que você tem o direito de saber.</p>
 
+[Stack - npm](https://www.npmjs.com/package/stack-nr)
+
 ## Tabela de conteúdo
 
 - [ferramentas](#ferramentas)
