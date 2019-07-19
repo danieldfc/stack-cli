@@ -1,13 +1,4 @@
-<p
-  align="center"
-  style="font-size: 40px;
-  margin-bottom: 0;
-  font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif"
->
-  Stack CLI
-<p>
-<hr />
+# Stack CLI
 
 <h3 align="center">
 Pacote para automatização de projetos usando Node.Js, ReactJs e React Native! 🚀
