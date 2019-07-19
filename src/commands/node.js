@@ -16,7 +16,7 @@ module.exports = {
     if(!confirmation) return error("Thank's for letting us know!")
 
     if(parameters.options.db === 'sequelize') {
-       const { dialect } = parameters.options;
+      const { dialect } = parameters.options;
 
       const pg = 'pg pg-hstore';
       const mysql = 'mysql2@^1.5.2';
@@ -86,6 +86,12 @@ module.exports = {
     await template.generate({
       template: 'editorconfig.js.ejs',
       target: `.editorconfig`
+    })
+
+    // Prettier
+    await template.generate({
+      template: 'prettier.json.ejs',
+      target: `.prettierrc`
     })
 
     success('Generate new project nodejs')
