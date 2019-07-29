@@ -31,7 +31,7 @@ module.exports = {
       switch (dialect) {
         case 'postgres':
           await run(`${argsType} sequelize ${pg} jsonwebtoken express`, { trim: true })
-          await run(`${argsType} eslint prettier elsint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
+          await run(`${argsType} eslint prettier eslint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
           await run(`${argsType} eslint --init`, { trim: true })
           if(sequelize_cli)  await run(`${argsType +' '+ argSequelize}`, { trim: true })
           await createFilesAndPasts(dialect);
@@ -40,7 +40,7 @@ module.exports = {
           break;
         case 'mysql':
           await run(`${argsType} sequelize ${mysql} jsonwebtoken express`, { trim: true })
-          await run(`${argsType} eslint prettier elsint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
+          await run(`${argsType} eslint prettier eslint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
           await run(`${argsType} eslint --init`, { trim: true })
           if(sequelize_cli)  await run(`${argsType +' '+ argSequelize}`, { trim: true })
           spinner.succeed('The packages went install with success!')
@@ -49,7 +49,7 @@ module.exports = {
           break;
         case 'mariadb':
           await run(`${argsType} sequelize ${mariadb} jsonwebtoken express`, { trim: true })
-          await run(`${argsType} eslint prettier elsint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
+          await run(`${argsType} eslint prettier eslint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
           await run(`${argsType} eslint --init`, { trim: true })
           if(sequelize_cli)  await run(`${argsType +' '+ argSequelize}`, { trim: true })
           await createFilesAndPasts(dialect);
@@ -58,7 +58,7 @@ module.exports = {
           break;
         case 'sqlite':
           await run(`${argsType} sequelize ${sqlite} jsonwebtoken express`, { trim: true })
-          await run(`${argsType} eslint prettier elsint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
+          await run(`${argsType} eslint prettier eslint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
           await run(`${argsType} eslint --init`, { trim: true })
           if(sequelize_cli)  await run(`${argsType +' '+ argSequelize}`, { trim: true })
           await createFilesAndPasts(dialect);
@@ -67,7 +67,7 @@ module.exports = {
           break;
         case 'mssql':
           await run(`${argsType} sequelize ${mssql} jsonwebtoken express`, { trim: true })
-          await run(`${argsType} eslint prettier elsint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
+          await run(`${argsType} eslint prettier eslint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
           await run(`${argsType} eslint --init`, { trim: true })
           if(sequelize_cli)  await run(`${argsType +' '+ argSequelize}`, { trim: true })
           await createFilesAndPasts(dialect);
@@ -76,7 +76,7 @@ module.exports = {
           break;
         default:
           await run(`${argsType} sequelize jsonwebtoken express`, { trim: true })
-          await run(`${argsType} eslint prettier elsint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
+          await run(`${argsType} eslint prettier eslint-plugin-prettier eslint-config-prettier babel-eslint -D`, { trim: true })
           await run(`${argsType} eslint --init`, { trim: true })
           if(sequelize_cli)  await run(`${argsType +' '+ argSequelize}`, { trim: true })
           await createFilesAndPasts(dialect);
