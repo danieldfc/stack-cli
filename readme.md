@@ -124,7 +124,7 @@ Contribuições são o que fazem a comunidade open source um lugar incrível par
 
 # Contato
 
-Daniel Felizardo - [Github](https://github.com/DanielDavidDev) - **daniel.david772@gmail.com**
+Daniel David - [Github](https://github.com/DanielDavidDev) - **daniel.david772@gmail.com**
 
 # Licença
 
