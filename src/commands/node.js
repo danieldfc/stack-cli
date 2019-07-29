@@ -11,10 +11,6 @@ module.exports = {
       createFilesAndPasts
     } = toolbox
 
-    const confirmation = await confirm("You are trying install correctly?")
-
-    if(!confirmation) return error("Thank's for letting us know!")
-
     if(parameters.options.db === 'sequelize') {
       const { dialect } = parameters.options;
 
@@ -27,7 +23,7 @@ module.exports = {
       const typePackage = await confirm("The type of package manager with Yarn?")
       const argsType = typePackage ? 'yarn add' : 'npm install --save';
 
-      const sequelize_cli = await confirm("Você vai usar o sequelize-cli?")
+      const sequelize_cli = await confirm("Do you want to use the 'sequelize-cli'?")
       const argSequelize = sequelize_cli ? (typePackage ? 'sequelize-cli -D' : 'sequelize-cli --save-dev'): '';
 
       const spinner = spin('Running...\n');
@@ -35,6 +31,7 @@ module.exports = {
       switch (dialect) {
         case 'postgres':
           await run(`${argsType} sequelize ${pg} jsonwebtoken express`, { trim: true })
+          await run(`${argsType} eslint -D`, { trim: true })
           if(sequelize_cli)  await run(`${argsType +' '+ argSequelize}`, { trim: true })
           await createFilesAndPasts(dialect);
           spinner.succeed('The packages went install with success!')

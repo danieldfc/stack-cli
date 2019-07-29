@@ -63,12 +63,9 @@ Espera-se terminar a execução e a partir de agora você está pronto para pros
 Para executar a lib, foi disponibilizado alguns comandos:
 
 ````shell
-$  stack-nr node --db=sequelize --dialect=postgres
+$  stack node --db=sequelize --dialect=postgres
 ````
 
-````shell
-$  stack-nr node --db=sequelize --dialect=postgres
-````
 Para a flag **--db**, você poderá usar o banco de dados, dentre eles estão:
 
 - sequelize
@@ -96,7 +93,7 @@ src
 ┃   ┣ auth.js
 ┃   ┗ database.js
 ┗ database
-     ┗ index.js
+      ┗ index.js
 ````
 
 Aqui você precisará entender como funciona o fluxo, porque este é o seu ponto de partida para começar a programar em Nodejs.
@@ -127,7 +124,7 @@ Contribuições são o que fazem a comunidade open source um lugar incrível par
 
 # Contato
 
-Daniel Felizardo - [Github](https://github.com/danielfelizardo2017) - **daniel.david772@gmail.com**
+Daniel Felizardo - [Github](https://github.com/DanielDavidDev) - **daniel.david772@gmail.com**
 
 # Licença
 
